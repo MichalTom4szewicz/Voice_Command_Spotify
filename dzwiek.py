@@ -59,8 +59,7 @@ if __name__ == "__main__":
         myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
         sd.wait()  # Wait until recording is finished
 
-        ty = sf.write(str(licznik) + '.wav', myrecording, 16000)
-        print(ty)
+        sf.write(str(licznik) + '.wav', myrecording, 16000)
 
         harvard = sr.AudioFile(str(licznik) + '.wav')
 
@@ -103,7 +102,7 @@ if __name__ == "__main__":
                 controller.release(Key.up)
             window.Minimize()
 
-        if (tekst == 'down' or tekst == 'own'):
+        if (tekst == 'down' or tekst == 'own' or tekst == 'dial'):
             time.sleep(0.1)
             window.Maximize()
             for i in range(skok):
