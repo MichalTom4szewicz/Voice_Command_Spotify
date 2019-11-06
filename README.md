@@ -1,3 +1,5 @@
 # Voice_Command_Spotify
-#Desktop app
+# Desktop app
+
+
 na razie trochę wiocha, ale kiedyś będzie lepiej
