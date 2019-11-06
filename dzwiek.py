@@ -27,7 +27,7 @@ def rec_from_mic(recognizer, microphone):
 if __name__ == "__main__":
 
     fs = 16000
-    seconds = 2
+    seconds = 2.5
     skok = 7
 
     try:
@@ -97,12 +97,12 @@ if __name__ == "__main__":
             window.Maximize()
             for i in range(skok):
                 controller.press(Key.ctrl_l)
-                controller.press(Key.up)
+                controller.press(Key.up) 
                 controller.release(Key.ctrl_l)
                 controller.release(Key.up)
             window.Minimize()
 
-        if (tekst == 'down' or tekst == 'own' or tekst == 'dial'):
+        if (tekst == 'down' or tekst == 'own' or tekst == 'dial' or tekst == 'dawn'):
             time.sleep(0.1)
             window.Maximize()
             for i in range(skok):
